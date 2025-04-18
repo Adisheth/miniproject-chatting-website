@@ -1,0 +1,23 @@
+     
+.header{
+    /* background: red; */
+    height: 57px;
+    border-bottom: 1px solid black;
+ }
+ 
+ .title::before{
+    position: absolute;
+    content: '';
+    background: #80848e;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 6px;
+    transition:0.5s all ease-out ;
+ }
+ 
+ .title:hover::before{
+   width: 105px;
+ }
+ 
+ 

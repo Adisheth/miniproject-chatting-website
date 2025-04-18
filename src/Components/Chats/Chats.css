@@ -1,0 +1,114 @@
+.chatArea::-webkit-scrollbar{
+    width: 6px;
+    
+  }
+  
+  .chatArea::-webkit-scrollbar-thumb{
+    background-color: #232324;
+    border-radius: 25px;
+  }
+
+  
+
+  button {
+    background-color: #282c34; /* Green */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.25rem;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  
+  
+  .chatArea p {
+    max-width: 500px;
+    margin-bottom: 12px;
+    line-height: 24px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    color: rgb(5, 5, 5);
+    text-align: center;
+   
+  }
+  
+  .message {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+  
+  .sent {
+    flex-direction: row-reverse;
+  }
+  
+  .sent p {
+    color: white;
+    background: #0b93f6;
+    align-self: flex-end;
+    margin-right: 15px;
+    margin-top: 10px;
+  }
+  .sent p::before {
+    content: '';
+      position: absolute;
+      top: 0;
+      right: -12px;
+      width: 20px;
+      height: 20px;
+      background: #0b93f6;
+      clip-path: polygon(100% 0, 0 0, 10% 69%);
+  }
+  .received p {
+    background: #e5e5ea;
+    margin-left: 5px;
+    color: black;
+    margin-left: 15px
+  }
+  .received p::before {
+    content: '';
+      position: absolute;
+      top: 0;
+      left: -12px;
+      width: 20px;
+      height: 20px;
+      background: #e5e5ea;
+  
+      clip-path: polygon(100% 0, 0 0, 100% 69%);
+  }
+  
+  .avatar{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 60px;
+    height:60px;
+  }
+  
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}

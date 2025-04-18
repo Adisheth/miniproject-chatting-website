@@ -1,0 +1,76 @@
+
+.groups::before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    /* width: 6px; */
+    height: 25px;
+    background: whitesmoke;
+    top: 12px;
+    left: -17px;
+    border-radius: 0px 10px 10px 0;
+}
+
+.groups:hover::before {
+   width: 6px;
+   transition: 0.5s all ease-in-out;
+}
+
+.signout{
+     text-decoration: none;
+}
+
+.create{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.addServer{
+    position:absolute;
+    top:0%;
+    left:100%;
+    transform:translate(150%,50%)
+}
+.groups::before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    /* width: 6px; */
+    height: 25px;
+    background: whitesmoke;
+    top: 12px;
+    left: -17px;
+    border-radius: 0px 10px 10px 0;
+}
+
+.groups:hover::before {
+   width: 6px;
+   transition: 0.5s all ease-in-out;
+}
+
+.signout{
+     text-decoration: none;
+}
+
+.create{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.addServer{
+    position:absolute;
+    top:0%;
+    left:100%;
+    transform:translate(150%,50%)
+}
+.userChange{
+    position:absolute;
+    top:0%;
+    left:100%;
+    transform:translate(150%,50%)
+}
+
